@@ -58,9 +58,9 @@ layout: default
 
     <!--   Icon Section   -->
     <div class="row">
-      <div class="col s12 m4" id="amenities">
+      <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><i class="material-icons">done_all</i></h2>
+          <h2 class="center"><a id="amenities" class="anchor"><i class="material-icons">done_all</i></a></h2>
           <h5 class="center">Amenities</h5>
           <ul>
             <li><i class="material-icons">done</i> Pet Friendly</li>
@@ -75,17 +75,17 @@ layout: default
         </div>
       </div>
 
-      <div class="col s12 m4" id="availability">
+      <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><i class="material-icons">group</i></h2>
+          <h2 class="center"><a id="availability" class="anchor"><i class="material-icons">group</i></a></h2>
           <h5 class="center">Availability</h5>
           <p class="light">Availability is rare, but you can add yourself to the mailing list for future vacancies.</p>
         </div>
       </div>
 
-      <div class="col s12 m4" id="pricing">
+      <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><i class="material-icons">attach_money</i></h2>
+          <h2 class="center"><a id="pricing" class="anchor"><i class="material-icons">attach_money</i></a></h2>
           <h5 class="center">Pricing</h5>
           <p class="light">Prices range from $1,000 to $2,000. Our luxury apartments beat out our competitors in price to square foot!</p>
         </div>
@@ -110,11 +110,12 @@ layout: default
   <div class="section">
 
     <div class="row">
-      <div class="col s12 center" id="lifestyle">
+      <div class="col s12 center">
         <h3><i class="mdi-content-send brown-text"></i></h3>
-        <h4>Lifestyle</h4>
-        <p class="left-align light">The Fairport Ridge lifestyle is all about freedom and luxury. You'll have the freedom to enjoy your apartment home as well as your hobbies and interests because you won't be saddled with all the responsibilities of home ownership. The hassles of maintaining the grass and landscaping, cleaning the gutters, repairing appliances, or shoveling the snow are all gone. Pursue what you love to do and leave the hassles up to us!</div>
-    </div>
+        <h4><a id="lifestyle" class="anchor">Lifestyle</a></h4>
+        <p class="left-align light">The Fairport Ridge lifestyle is all about freedom and luxury. You'll have the freedom to enjoy your apartment home as well as your hobbies and interests because you won't be saddled with all the responsibilities of home ownership. The hassles of maintaining the grass and landscaping, cleaning the gutters, repairing appliances, or shoveling the snow are all gone. Pursue what you love to do and leave the hassles up to us!</p>
+      </div>
+      </div>
 
   </div>
 </section>
@@ -131,14 +132,16 @@ layout: default
 </section>
 
 <section id="location">
-  <iframe id="map" src="https://snazzymaps.com/embed/43026"></iframe>
+  {% include map.html %}
 </section>
 
-<footer class="page-footer teal">
-
+<footer class="page-footer light-blue">
   <div class="footer-copyright">
     <div class="container">
-
+    © 2018 Fairport Ridge Apartments
+    <!--
+    <a class="grey-text text-lighten-4 right" href="#">Strawberry Flats</a>
+  -->
     </div>
   </div>
 </footer>
