@@ -9,18 +9,24 @@ var mapStyles = [
   {"featureType": "road.highway","elementType": "geometry","stylers": [{"visibility": "on"}]},
   {"featureType": "water","stylers": [{"color": "#84afa3"},{"lightness": 52}]},
   {"stylers": [{"saturation": -17},{"gamma": 0.36}]},
-  {"featureType": "transit.line", "elementType": "geometry","stylers": [{"color": "#3f518c"}]}]
+  {"featureType": "transit.line", "elementType": "geometry","stylers": [{"color": "#3f518c"}]}
+];
 
 var map;
 var infowindow;
+var fairport = { lat: 42.186039, lng: -76.855548 };
 
 function initMap() {
-  var fairport = { lat: 42.137858, lng: -76.985960 };
   map = new google.maps.Map(document.getElementById('map'), {
     center: fairport,
     zoom: 12,
     styles: mapStyles
   });
+
+  var placesControlDiv = document.getElementById('placesDiv');
+  var placesControl = new PlacesControl(map);
+  map.controls[google.maps.ControlPosition.LEFT_CENTER].push(placesControlDiv);
+
 
   var marker = new google.maps.Marker({
     position: fairport,
@@ -53,7 +59,6 @@ function search(type, location) {
 }
 
 function createMarker(place, icon) {
-  console.log(place);
   var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
     map: map,
@@ -65,4 +70,15 @@ function createMarker(place, icon) {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
   });
+}
+
+function PlacesControl(map) {
+  var radButtons = document.getElementById('placesUI').children;
+  console.log(radButtons);
+  for (i = 0; i < radButtons.length; i++) {
+    radButtons[i].addEventListener('click', function(type) {
+      console.log('type', type);
+    });
+  }
+
 }

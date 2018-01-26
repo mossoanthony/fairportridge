@@ -90,3 +90,83 @@ nav {
 .anchor {
   padding-top: 92px;
 }
+
+#placesDiv {
+  z-index: 1;
+}
+
+#placesUI {
+  background-color: rgba(0,0,0,.6);
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+label {
+  display: block;
+}
+
+[type="radio"] + span {
+  color: #fff;
+}
+
+$red: color('red', 'darken-1');
+[type="radio"].red-rad:checked + span:after{
+  background-color: $red;
+  border: $red;
+}
+[type="radio"].red-rad:not(:checked) + span:before,
+[type="radio"].red-rad:not(:checked) + span:after{
+    border: 2px solid $red;
+}
+
+$yellow: color('yellow', 'darken-1');
+[type="radio"].yellow-rad:checked + span:after{
+  background-color: $yellow;
+  border: $yellow;
+}
+[type="radio"].yellow-rad:not(:checked) + span:before,
+[type="radio"].yellow-rad:not(:checked) + span:after{
+    border: 2px solid $yellow;
+}
+
+$green: color('green', 'darken-1');
+[type="radio"].green-rad:checked + span:after{
+  background-color: $green;
+  border: $green;
+}
+[type="radio"].green-rad:not(:checked) + span:before,
+[type="radio"].green-rad:not(:checked) + span:after{
+    border: 2px solid $green;
+}
+
+$cyan: color('cyan', 'darken-1');
+[type="radio"].cyan-rad:checked + span:after{
+  background-color: $cyan;
+  border: $cyan;
+}
+[type="radio"].cyan-rad:not(:checked) + span:before,
+[type="radio"].cyan-rad:not(:checked) + span:after{
+    border: 2px solid $cyan;
+}
+
+$blue: color('blue', 'darken-1');
+[type="radio"].blue-rad:checked + span:after{
+  background-color: $blue;
+  border: $blue;
+}
+[type="radio"].blue-rad:not(:checked) + span:before,
+[type="radio"].blue-rad:not(:checked) + span:after{
+    border: 2px solid $blue;
+}
+
+$black: #000;
+[type="radio"].black-rad:checked + span:after{
+  background-color: $black;
+  border: $black;
+}
+[type="radio"].black-rad:not(:checked) + span:before,
+[type="radio"].black-rad:not(:checked) + span:after{
+    border: 2px solid $black;
+}
