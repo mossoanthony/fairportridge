@@ -2603,42 +2603,8 @@ nav { height: 72px; padding: 4px 0; }
 
 .anchor { padding-top: 92px; }
 
-#placesDiv { z-index: 1; }
+#left-panel { z-index: 1; height: 100%; width: 15rem; background-color: rgba(0, 0, 0, 0.6); }
 
-#placesUI { background-color: rgba(0, 0, 0, 0.6); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); border-radius: 0 5px 5px 0; cursor: pointer; padding: 5px; }
+#map-search { height: 2.5rem; width: 85%; font: 400 1rem Roboto, Arial, sans-serif; }
 
-label { display: block; }
-
-#map-input { height: auto; font: 400 1rem Roboto, Arial, sans-serif; }
-
-#map-input-label { max-width: 9.5rem; }
-
-[type="radio"] + span { color: #fff; }
-
-[type="radio"].red-rad:checked + span:after { background-color: #E53935; border: #E53935; }
-
-[type="radio"].red-rad:not(:checked) + span:before, [type="radio"].red-rad:not(:checked) + span:after { border: 2px solid #E53935; }
-
-[type="radio"].yellow-rad:checked + span:after { background-color: #fdd835; border: #fdd835; }
-
-[type="radio"].yellow-rad:not(:checked) + span:before, [type="radio"].yellow-rad:not(:checked) + span:after { border: 2px solid #fdd835; }
-
-[type="radio"].green-rad:checked + span:after { background-color: #43A047; border: #43A047; }
-
-[type="radio"].green-rad:not(:checked) + span:before, [type="radio"].green-rad:not(:checked) + span:after { border: 2px solid #43A047; }
-
-[type="radio"].cyan-rad:checked + span:after { background-color: #00acc1; border: #00acc1; }
-
-[type="radio"].cyan-rad:not(:checked) + span:before, [type="radio"].cyan-rad:not(:checked) + span:after { border: 2px solid #00acc1; }
-
-[type="radio"].blue-rad:checked + span:after { background-color: #1E88E5; border: #1E88E5; }
-
-[type="radio"].blue-rad:not(:checked) + span:before, [type="radio"].blue-rad:not(:checked) + span:after { border: 2px solid #1E88E5; }
-
-[type="radio"].black-rad:checked + span:after { background-color: #000; border: #000; }
-
-[type="radio"].black-rad:not(:checked) + span:before, [type="radio"].black-rad:not(:checked) + span:after { border: 2px solid #000; }
-
-[type="radio"].white-rad:checked + span:after { background-color: #fff; border: #fff; }
-
-[type="radio"].white-rad:not(:checked) + span:before, [type="radio"].white-rad:not(:checked) + span:after { border: 2px solid #fff; }
+#search-btn { padding: 0 5px; }
