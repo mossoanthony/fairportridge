@@ -107,6 +107,15 @@ label {
   display: block;
 }
 
+#map-input {
+  height: auto;
+  font: 400 1rem Roboto, Arial, sans-serif;
+}
+
+#map-input-label {
+  max-width: 9.5rem;
+}
+
 [type="radio"] + span {
   color: #fff;
 }
@@ -169,4 +178,14 @@ $black: #000;
 [type="radio"].black-rad:not(:checked) + span:before,
 [type="radio"].black-rad:not(:checked) + span:after{
     border: 2px solid $black;
+}
+
+$white: #fff;
+[type="radio"].white-rad:checked + span:after{
+  background-color: $white;
+  border: $white;
+}
+[type="radio"].white-rad:not(:checked) + span:before,
+[type="radio"].white-rad:not(:checked) + span:after{
+    border: 2px solid $white;
 }

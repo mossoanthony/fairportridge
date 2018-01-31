@@ -2609,6 +2609,10 @@ nav { height: 72px; padding: 4px 0; }
 
 label { display: block; }
 
+#map-input { height: auto; font: 400 1rem Roboto, Arial, sans-serif; }
+
+#map-input-label { max-width: 9.5rem; }
+
 [type="radio"] + span { color: #fff; }
 
 [type="radio"].red-rad:checked + span:after { background-color: #E53935; border: #E53935; }
@@ -2634,3 +2638,7 @@ label { display: block; }
 [type="radio"].black-rad:checked + span:after { background-color: #000; border: #000; }
 
 [type="radio"].black-rad:not(:checked) + span:before, [type="radio"].black-rad:not(:checked) + span:after { border: 2px solid #000; }
+
+[type="radio"].white-rad:checked + span:after { background-color: #fff; border: #fff; }
+
+[type="radio"].white-rad:not(:checked) + span:before, [type="radio"].white-rad:not(:checked) + span:after { border: 2px solid #fff; }

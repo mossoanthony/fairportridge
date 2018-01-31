@@ -23,17 +23,77 @@ function initMap() {
     styles: mapStyles
   });
 
-  var placesControlDiv = document.getElementById('placesDiv');
-  var placesControl = new PlacesControl(map);
-  map.controls[google.maps.ControlPosition.LEFT_CENTER].push(placesControlDiv);
-
-
+  // Fairport Ridge Marker
   var marker = new google.maps.Marker({
     position: fairport,
     map: map,
     icon: {url: "img/place.svg", scaledSize: new google.maps.Size(36, 36)}
   });
 
+  // Add custom UI to map
+  var input = document.getElementById('map-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+
+  var placesControlDiv = document.getElementById('placesDiv');
+  var placesControl = new PlacesControl(map);
+
+  map.controls[google.maps.ControlPosition.LEFT_CENTER].push(placesControlDiv);
+
+  // Add listeners to help with things
+  map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+  });
+  var markers = [];
+  searchBox.addListener('places_changed', function() {
+    var places = searchBox.getPlaces();
+    if (places.length == 0) {
+      return;
+    }
+
+    // Clear out the old markers.
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+
+    places.forEach(function(place) {
+      if (!place.geometry) {
+        console.log("Returned place contains no geometry");
+        return;
+      }
+      var icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      // Create a marker for each place.
+      markers.push(new google.maps.Marker({
+        map: map,
+        icon: icon,
+        title: place.name,
+        position: place.geometry.location
+      }));
+
+      if (place.geometry.viewport) {
+        // Only geocodes have viewport.
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+    map.fitBounds(bounds);
+  });
+}
+
+function placesChanged() {
+
+}
+
+function search(type, location) {
+  // TODO: Implement nearbySearch to be able to display many different kinds of icons/types of places
   var request = {
     location: fairport,
     rankBy: google.maps.places.RankBy.DISTANCE,
@@ -54,10 +114,6 @@ function initMap() {
   });
 }
 
-function search(type, location) {
-  // TODO: Implement nearbySearch to be able to display many different kinds of icons/types of places
-}
-
 function createMarker(place, icon) {
   var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
@@ -72,13 +128,27 @@ function createMarker(place, icon) {
   });
 }
 
-function PlacesControl(map) {
-  var radButtons = document.getElementById('placesUI').children;
-  console.log(radButtons);
-  for (i = 0; i < radButtons.length; i++) {
-    radButtons[i].addEventListener('click', function(type) {
-      console.log('type', type);
-    });
-  }
+// function PlacesControl(map) {
+//   var radButtons = document.getElementById('placesUI').children;
+//   console.log(radButtons);
+//   for (i = 0; i < radButtons.length; i++) {
+//     radButtons[i].addEventListener('click', function(type) {
+//       console.log('type', type);
+//     });
+//   }
+// }
 
+function PlacesControl(map) {
+  document.getElementById('placesUI').addEventListener('click', onClick);
+}
+
+function onClick(obj) {
+  var key = obj.target.value;
+  if (key == undefined) {
+    return;
+  }
+  if (obj.target.id == "map-input") {
+
+  }
+  console.log(obj.target);
 }
