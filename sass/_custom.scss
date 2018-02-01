@@ -29,6 +29,11 @@ p {
   }
 }
 
+#index-banner {
+  min-height: 85vh;
+}
+
+
 .parallax {
   img {
     min-height: 100%;
@@ -93,9 +98,10 @@ nav {
 
 #left-panel {
   z-index: 1;
-  height: 100%;
-  width: 15rem;
+  height: auto; //100%
+  width: 17rem;
   background-color: rgba(0,0,0,.6);
+  padding: 0 1rem;
 }
 
 #map-search {
