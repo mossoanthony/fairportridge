@@ -29,10 +29,9 @@ p {
   }
 }
 
-#index-banner {
-  min-height: 85vh;
+#header-btn {
+  margin-top: 32px;
 }
-
 
 .parallax {
   img {
@@ -69,8 +68,8 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
+
   background-color: #b55063;
-  //@extend .deep-orange, .accent-2;
   height: 48px;
   p {
     @extend .white-text;
@@ -98,7 +97,7 @@ nav {
 
 #left-panel {
   z-index: 1;
-  height: auto; //100%
+  height: auto;
   width: 17rem;
   background-color: rgba(0,0,0,.6);
   padding: 0 1rem;
@@ -114,31 +113,21 @@ nav {
   padding: 0 5px;
 }
 
-// #placesDiv {
-//   z-index: 1;
-//   height: 100%;
-//
-// }
-//
-// #placesUI {
-//   background-color: rgba(0,0,0,.6);
-//   box-shadow: 0 2px 6px rgba(0,0,0,.3);
-//   border-radius: 0 5px 5px 0;
-//   cursor: pointer;
-//   padding: 5px;
-//   height: 100%;
-//   margin: 100px;
-// }
-//
-// label {
-//   display: block;
-// }
-//
-// #map-input {
-//   height: auto;
-//   font: 400 1rem Roboto, Arial, sans-serif;
-// }
-//
-// #map-input-label {
-//   max-width: 9.5rem;
-// }
+.video-overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+// STOPPED HERE......BELOW MIGHT NOT BE NEEDED, POSSIBLY A BETTER WAY TO DO THINGS
+#testimonial-header {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+}
