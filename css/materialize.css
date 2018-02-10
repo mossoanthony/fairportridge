@@ -2616,6 +2616,8 @@ nav { height: 72px; padding: 4px 0; }
 #testimonial-header { position: absolute; z-index: 1; left: 0; right: 0; text-align: center; }
 #testimonial-header a { color: #fff; }
 
+.testimonial-item { padding-top: 3rem; }
+
 .homepage-hero-module { border-right: none; border-left: none; position: relative; height: calc(100vh - 120px); overflow: hidden; }
 
 .no-video .video-container video, .touch .video-container video { display: none; }
