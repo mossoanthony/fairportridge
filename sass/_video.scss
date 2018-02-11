@@ -13,6 +13,7 @@
 .touch .video-container .poster {
     display: block !important;
 }
+
 .video-container {
     position: initial;
     bottom: 0%;
@@ -22,9 +23,11 @@
     overflow: hidden;
     background: rgba(255,255,255,0.3);
     .poster img {
-        width: 100%;
-        bottom: 0;
-        position: absolute;
+      min-height: 100%;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -2
     }
     .filter {
         z-index: 100;
@@ -36,6 +39,7 @@
         position: absolute;
         z-index: -1;
         bottom: 0;
+        right: 0;
     }
     video.fillWidth {
         min-height: 100%;

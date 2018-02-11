@@ -2587,6 +2587,8 @@ p { line-height: 2rem; }
 
 .parallax img { min-height: 100%; min-width: 100%; }
 
+.parallax-container { text-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
+
 .navbar-fixed { height: 72px; }
 
 nav { height: 72px; padding: 4px 0; }
@@ -2613,10 +2615,22 @@ nav { height: 72px; padding: 4px 0; }
 
 .video-overlay { position: absolute; width: 100%; text-align: center; height: 100%; }
 
-#testimonial-header { position: absolute; z-index: 1; left: 0; right: 0; text-align: center; }
-#testimonial-header a { color: #fff; }
+.carousel-item p { font-size: 1.2rem !important; }
+.carousel-item h2 i { font-size: 2.5rem !important; }
 
-.testimonial-item { padding-top: 3rem; }
+.indicator-item { margin: 4px 4px !important; }
+
+.fine-print { margin: 0; font-size: .8rem; padding: 16px; line-height: 1rem; }
+
+.waves-effect.waves-blue .waves-ripple { background-color: rgba(0, 145, 234, 0.65); }
+
+.btn-modal { width: 40px; height: 40px; line-height: 40px; text-align: center; padding: 0; border-radius: 40px; margin: 4px 10px !important; }
+
+.indented { text-indent: 2rem; }
+
+.hidden { display: none; }
+
+.author { font-style: italic; }
 
 .homepage-hero-module { border-right: none; border-left: none; position: relative; height: calc(100vh - 120px); overflow: hidden; }
 
@@ -2625,7 +2639,7 @@ nav { height: 72px; padding: 4px 0; }
 .no-video .video-container .poster, .touch .video-container .poster { display: block !important; }
 
 .video-container { position: initial; bottom: 0%; left: 0%; height: 100%; width: 100%; overflow: hidden; background: rgba(255, 255, 255, 0.3); }
-.video-container .poster img { width: 100%; bottom: 0; position: absolute; }
+.video-container .poster img { min-height: 100%; bottom: 0; right: 0; position: absolute; z-index: -2; }
 .video-container .filter { z-index: 100; position: absolute; background: transparent; width: 100%; }
-.video-container video { position: absolute; z-index: -1; bottom: 0; }
+.video-container video { position: absolute; z-index: -1; bottom: 0; right: 0; }
 .video-container video.fillWidth { min-height: 100%; }

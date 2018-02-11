@@ -1,0 +1,36 @@
+<div class="carousel carousel-slider center" id="snippet-carousel">
+  {% for t in site.data.quotes %}
+  <div class="carousel-item blue white-text" index="{% increment counter %}">
+    <h2>
+      <i class="material-icons">format_quote</i>
+    </h2>
+    <p class="white-text">{{ t.snippet }}</p>
+    <p class="white-text author">― {{ t.author }}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="center blue">
+  <a class="btn-floating btn-large waves-effect waves-light btn-flat white-text" onclick="prevSnippet()"><i class="material-icons">navigate_before</i></a>
+  <a class="btn btn-large waves-effect white blue-text darken-text-3 modal-trigger" href="#modal1">Read More</a>
+  <a class="btn-floating btn-large waves-effect waves-light btn-flat white-text" onclick="nextSnippet()"><i class="material-icons">navigate_next</i></a>
+  <p class="fine-print white-text">* Testimonials from sister property Strawberry Flats</p>
+</div>
+
+<div id="modal1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Testimonials</h4>
+    {% for t in site.data.quotes %}
+    <div class="hidden testimonial">
+      {% assign quote = t.quote | split: "\n" %} {% for s in quote %}
+      <p class="indented">{{ s | raw }}</p>
+      {% endfor %}
+      <p class="author">― {{ t.author }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat btn-modal left"><i class="material-icons">close</i></a>
+    <a href="#!" class="modal-action waves-effect waves-blue btn-flat btn-modal" onclick="prevSnippet()"><i class="material-icons">navigate_before</i></a>
+    <a href="#!" class="modal-action waves-effect waves-blue btn-flat btn-modal" onclick="nextSnippet()"><i class="material-icons">navigate_next</i></a>
+  </div>
+</div>

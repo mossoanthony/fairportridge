@@ -39,9 +39,9 @@ layout: default
   <div class="video-container">
     <div class="video-overlay valign-wrapper">
       <div class="container">
-        <a href="#" class="logo-header"><img src="img/logo.png" alt=""></a>
+        <a href="#" class="logo-header"><img src="img/logo.png" alt="Fairport Ridge, Luxury Apartments logo"></a>
         <div class="row center">
-          <a href="#" id="header-btn" class="btn-large waves-effect waves-light light-blue accent-4">Book a Visit</a>
+          <a href="#" id="header-btn" class="btn-large waves-effect waves-light light-blue accent-4">Apply Today</a>
         </div>
       </div>
     </div>
@@ -49,8 +49,8 @@ layout: default
       <source src="img/Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
       <source src="img/Up.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
     </video>
-    <div class="poster hidden">
-      <img src="Up.jpg" alt="">
+    <div class="poster">
+      <img src="img/Up.jpg" alt="Scenic clouds">
     </div>
   </div>
 </section>
@@ -105,7 +105,7 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 2"></div>
+  <div class="parallax"><img src="img/b1.jpg" alt="Unsplashed background img 2"></div>
 </section>
 
 <section class="container">
@@ -131,30 +131,10 @@ layout: default
   </div>
   <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 3"></div>
 </section> -->
-<div>
-  <!-- STOPPED HERE......BELOW MIGHT NOT BE NEEDED, POSSIBLY A BETTER WAY TO DO THINGS -->
-  <div class="carousel carousel-slider center">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item blue white-text" href="#one!">
-      <h2><i class="material-icons">format_quote</i></h2>
-      <p class="white-text">My lady, Kathy, and I moved into our home in Strawberry Flats over 8 years ago. It was the best move we made in our 50 years of marriage – and it was number 13! Kathy passed last year, but we both loved living here and I have no plans to leave. The quality of our home, the ease of living (no maintenance work for me!), the location, the neighbors, are all big pluses; and with the Mosso’s as our caretakers – life here is good. After living in three other apartment complexes in this area, I speak from experience – Strawberry Flats is the best by far.</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div>
-</div>
+
+<section id="testimonials">
+  {% include testimonials.html %}
+</section>
 
 <section id="location">
   {% include map.html %}

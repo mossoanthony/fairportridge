@@ -40,6 +40,10 @@ p {
   }
 }
 
+.parallax-container {
+  text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+
 .navbar-fixed {
   height: 72px;
 }
@@ -120,18 +124,50 @@ nav {
     height: 100%;
 }
 
-// STOPPED HERE......BELOW MIGHT NOT BE NEEDED, POSSIBLY A BETTER WAY TO DO THINGS
-#testimonial-header {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  text-align: center;
-  a {
-    color: #fff;
+.carousel-item {
+  p {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    i {
+      font-size: 2.5rem !important;
+    }
   }
 }
 
-.testimonial-item {
-  padding-top: 3rem;
+.indicator-item {
+  margin: 4px 4px !important;
+}
+
+.fine-print {
+  margin: 0;
+  font-size: .8rem;
+  padding: 16px;
+  line-height: 1rem;
+}
+
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(0, 145, 234, 0.65);
+}
+
+.btn-modal {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+  border-radius: 40px;
+  margin: 4px 10px !important;
+}
+
+.indented {
+  text-indent: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.author {
+  font-style: italic;
 }

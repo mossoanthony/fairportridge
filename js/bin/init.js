@@ -1,19 +1,41 @@
+var carousel;
+var modal;
 (function($){
   $(function(){
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-    var instance = M.Carousel.init({
+
+    var carouselElem = document.querySelector('.carousel.carousel-slider');
+    carousel = M.Carousel.init(carouselElem, {
       fullWidth: true,
-      indicators: true
+      indicators: true,
+      onCycleTo: changedSnippet
     });
 
-    // Or with jQuery
-
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true
-    });
+  var modalElem = document.querySelector('.modal');
+  modal = M.Modal.init(modalElem, {});
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+function nextSnippet() {
+  carousel.next();
+}
+
+function prevSnippet() {
+  carousel.prev();
+}
+
+function changedSnippet(elem) {
+  index = elem.attributes.index.value;
+
+  all = document.getElementsByClassName('testimonial');
+  for (var i = 0; i < all.length; i++) {
+    all[i].classList.add('hidden');
+    if (i == index) {
+      all[i].classList.remove('hidden');
+    }
+  }
+  selected = document.getElementsByClassName('testimonial')[index];
+}
