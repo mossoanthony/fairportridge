@@ -93,7 +93,7 @@
 
 .red.accent-4 { background-color: #D50000 !important; }
 
-.red-text.text-accent-4, .icon-block .red-text.material-icons { color: #D50000 !important; }
+.red-text.text-accent-4, .red-text.sidenav-trigger, .icon-block .red-text.material-icons { color: #D50000 !important; }
 
 .pink { background-color: #e91e63 !important; }
 
@@ -149,7 +149,7 @@
 
 .pink.accent-4 { background-color: #c51162 !important; }
 
-.pink-text.text-accent-4, .icon-block .pink-text.material-icons { color: #c51162 !important; }
+.pink-text.text-accent-4, .pink-text.sidenav-trigger, .icon-block .pink-text.material-icons { color: #c51162 !important; }
 
 .purple { background-color: #9c27b0 !important; }
 
@@ -205,7 +205,7 @@
 
 .purple.accent-4 { background-color: #aa00ff !important; }
 
-.purple-text.text-accent-4, .icon-block .purple-text.material-icons { color: #aa00ff !important; }
+.purple-text.text-accent-4, .purple-text.sidenav-trigger, .icon-block .purple-text.material-icons { color: #aa00ff !important; }
 
 .deep-purple { background-color: #673ab7 !important; }
 
@@ -261,7 +261,7 @@
 
 .deep-purple.accent-4 { background-color: #6200ea !important; }
 
-.deep-purple-text.text-accent-4, .icon-block .deep-purple-text.material-icons { color: #6200ea !important; }
+.deep-purple-text.text-accent-4, .deep-purple-text.sidenav-trigger, .icon-block .deep-purple-text.material-icons { color: #6200ea !important; }
 
 .indigo { background-color: #3f51b5 !important; }
 
@@ -317,7 +317,7 @@
 
 .indigo.accent-4 { background-color: #304ffe !important; }
 
-.indigo-text.text-accent-4, .icon-block .indigo-text.material-icons { color: #304ffe !important; }
+.indigo-text.text-accent-4, .indigo-text.sidenav-trigger, .icon-block .indigo-text.material-icons { color: #304ffe !important; }
 
 .blue { background-color: #2196F3 !important; }
 
@@ -373,63 +373,63 @@
 
 .blue.accent-4 { background-color: #2962FF !important; }
 
-.blue-text.text-accent-4, .icon-block .blue-text.material-icons { color: #2962FF !important; }
+.blue-text.text-accent-4, .blue-text.sidenav-trigger, .icon-block .blue-text.material-icons { color: #2962FF !important; }
 
 .light-blue { background-color: #03a9f4 !important; }
 
-.light-blue-text, .icon-block .material-icons { color: #03a9f4 !important; }
+.light-blue-text, .sidenav-trigger, .icon-block .material-icons { color: #03a9f4 !important; }
 
 .light-blue.lighten-5 { background-color: #e1f5fe !important; }
 
-.light-blue-text.text-lighten-5, .icon-block .text-lighten-5.material-icons { color: #e1f5fe !important; }
+.light-blue-text.text-lighten-5, .text-lighten-5.sidenav-trigger, .icon-block .text-lighten-5.material-icons { color: #e1f5fe !important; }
 
 .light-blue.lighten-4 { background-color: #b3e5fc !important; }
 
-.light-blue-text.text-lighten-4, .icon-block .text-lighten-4.material-icons { color: #b3e5fc !important; }
+.light-blue-text.text-lighten-4, .text-lighten-4.sidenav-trigger, .icon-block .text-lighten-4.material-icons { color: #b3e5fc !important; }
 
 .light-blue.lighten-3 { background-color: #81d4fa !important; }
 
-.light-blue-text.text-lighten-3, .icon-block .text-lighten-3.material-icons { color: #81d4fa !important; }
+.light-blue-text.text-lighten-3, .text-lighten-3.sidenav-trigger, .icon-block .text-lighten-3.material-icons { color: #81d4fa !important; }
 
 .light-blue.lighten-2 { background-color: #4fc3f7 !important; }
 
-.light-blue-text.text-lighten-2, .icon-block .text-lighten-2.material-icons { color: #4fc3f7 !important; }
+.light-blue-text.text-lighten-2, .text-lighten-2.sidenav-trigger, .icon-block .text-lighten-2.material-icons { color: #4fc3f7 !important; }
 
 .light-blue.lighten-1 { background-color: #29b6f6 !important; }
 
-.light-blue-text.text-lighten-1, .icon-block .text-lighten-1.material-icons { color: #29b6f6 !important; }
+.light-blue-text.text-lighten-1, .text-lighten-1.sidenav-trigger, .icon-block .text-lighten-1.material-icons { color: #29b6f6 !important; }
 
 .light-blue.darken-1 { background-color: #039be5 !important; }
 
-.light-blue-text.text-darken-1, .icon-block .text-darken-1.material-icons { color: #039be5 !important; }
+.light-blue-text.text-darken-1, .text-darken-1.sidenav-trigger, .icon-block .text-darken-1.material-icons { color: #039be5 !important; }
 
 .light-blue.darken-2 { background-color: #0288d1 !important; }
 
-.light-blue-text.text-darken-2, .icon-block .text-darken-2.material-icons { color: #0288d1 !important; }
+.light-blue-text.text-darken-2, .text-darken-2.sidenav-trigger, .icon-block .text-darken-2.material-icons { color: #0288d1 !important; }
 
 .light-blue.darken-3 { background-color: #0277bd !important; }
 
-.light-blue-text.text-darken-3, .icon-block .text-darken-3.material-icons { color: #0277bd !important; }
+.light-blue-text.text-darken-3, .text-darken-3.sidenav-trigger, .icon-block .text-darken-3.material-icons { color: #0277bd !important; }
 
 .light-blue.darken-4 { background-color: #01579b !important; }
 
-.light-blue-text.text-darken-4, .icon-block .text-darken-4.material-icons { color: #01579b !important; }
+.light-blue-text.text-darken-4, .text-darken-4.sidenav-trigger, .icon-block .text-darken-4.material-icons { color: #01579b !important; }
 
 .light-blue.accent-1 { background-color: #80d8ff !important; }
 
-.light-blue-text.text-accent-1, .icon-block .text-accent-1.material-icons { color: #80d8ff !important; }
+.light-blue-text.text-accent-1, .text-accent-1.sidenav-trigger, .icon-block .text-accent-1.material-icons { color: #80d8ff !important; }
 
 .light-blue.accent-2 { background-color: #40c4ff !important; }
 
-.light-blue-text.text-accent-2, .icon-block .text-accent-2.material-icons { color: #40c4ff !important; }
+.light-blue-text.text-accent-2, .text-accent-2.sidenav-trigger, .icon-block .text-accent-2.material-icons { color: #40c4ff !important; }
 
 .light-blue.accent-3 { background-color: #00b0ff !important; }
 
-.light-blue-text.text-accent-3, .icon-block .text-accent-3.material-icons { color: #00b0ff !important; }
+.light-blue-text.text-accent-3, .text-accent-3.sidenav-trigger, .icon-block .text-accent-3.material-icons { color: #00b0ff !important; }
 
 .light-blue.accent-4 { background-color: #0091ea !important; }
 
-.light-blue-text.text-accent-4, .icon-block .material-icons { color: #0091ea !important; }
+.light-blue-text.text-accent-4, .sidenav-trigger, .icon-block .material-icons { color: #0091ea !important; }
 
 .cyan { background-color: #00bcd4 !important; }
 
@@ -485,7 +485,7 @@
 
 .cyan.accent-4 { background-color: #00b8d4 !important; }
 
-.cyan-text.text-accent-4, .icon-block .cyan-text.material-icons { color: #00b8d4 !important; }
+.cyan-text.text-accent-4, .cyan-text.sidenav-trigger, .icon-block .cyan-text.material-icons { color: #00b8d4 !important; }
 
 .teal { background-color: #009688 !important; }
 
@@ -541,7 +541,7 @@
 
 .teal.accent-4 { background-color: #00bfa5 !important; }
 
-.teal-text.text-accent-4, .icon-block .teal-text.material-icons { color: #00bfa5 !important; }
+.teal-text.text-accent-4, .teal-text.sidenav-trigger, .icon-block .teal-text.material-icons { color: #00bfa5 !important; }
 
 .green { background-color: #4CAF50 !important; }
 
@@ -597,7 +597,7 @@
 
 .green.accent-4 { background-color: #00C853 !important; }
 
-.green-text.text-accent-4, .icon-block .green-text.material-icons { color: #00C853 !important; }
+.green-text.text-accent-4, .green-text.sidenav-trigger, .icon-block .green-text.material-icons { color: #00C853 !important; }
 
 .light-green { background-color: #8bc34a !important; }
 
@@ -653,7 +653,7 @@
 
 .light-green.accent-4 { background-color: #64dd17 !important; }
 
-.light-green-text.text-accent-4, .icon-block .light-green-text.material-icons { color: #64dd17 !important; }
+.light-green-text.text-accent-4, .light-green-text.sidenav-trigger, .icon-block .light-green-text.material-icons { color: #64dd17 !important; }
 
 .lime { background-color: #cddc39 !important; }
 
@@ -709,7 +709,7 @@
 
 .lime.accent-4 { background-color: #aeea00 !important; }
 
-.lime-text.text-accent-4, .icon-block .lime-text.material-icons { color: #aeea00 !important; }
+.lime-text.text-accent-4, .lime-text.sidenav-trigger, .icon-block .lime-text.material-icons { color: #aeea00 !important; }
 
 .yellow { background-color: #ffeb3b !important; }
 
@@ -765,7 +765,7 @@
 
 .yellow.accent-4 { background-color: #ffd600 !important; }
 
-.yellow-text.text-accent-4, .icon-block .yellow-text.material-icons { color: #ffd600 !important; }
+.yellow-text.text-accent-4, .yellow-text.sidenav-trigger, .icon-block .yellow-text.material-icons { color: #ffd600 !important; }
 
 .amber { background-color: #ffc107 !important; }
 
@@ -821,7 +821,7 @@
 
 .amber.accent-4 { background-color: #ffab00 !important; }
 
-.amber-text.text-accent-4, .icon-block .amber-text.material-icons { color: #ffab00 !important; }
+.amber-text.text-accent-4, .amber-text.sidenav-trigger, .icon-block .amber-text.material-icons { color: #ffab00 !important; }
 
 .orange { background-color: #ff9800 !important; }
 
@@ -877,7 +877,7 @@
 
 .orange.accent-4 { background-color: #ff6d00 !important; }
 
-.orange-text.text-accent-4, .icon-block .orange-text.material-icons { color: #ff6d00 !important; }
+.orange-text.text-accent-4, .orange-text.sidenav-trigger, .icon-block .orange-text.material-icons { color: #ff6d00 !important; }
 
 .deep-orange { background-color: #ff5722 !important; }
 
@@ -933,7 +933,7 @@
 
 .deep-orange.accent-4 { background-color: #dd2c00 !important; }
 
-.deep-orange-text.text-accent-4, .icon-block .deep-orange-text.material-icons { color: #dd2c00 !important; }
+.deep-orange-text.text-accent-4, .deep-orange-text.sidenav-trigger, .icon-block .deep-orange-text.material-icons { color: #dd2c00 !important; }
 
 .brown { background-color: #795548 !important; }
 
@@ -2575,8 +2575,6 @@ nav ul a, nav .brand-logo { color: #444; }
 
 p { line-height: 2rem; }
 
-.sidenav-trigger { color: #26a69a; }
-
 .parallax-container { min-height: 380px; line-height: 0; height: auto; color: rgba(255, 255, 255, 0.9); }
 .parallax-container .section { width: 100%; }
 
@@ -2624,6 +2622,10 @@ nav { height: 72px; padding: 4px 0; }
 
 .waves-effect.waves-blue .waves-ripple { background-color: rgba(0, 145, 234, 0.65); }
 
+@media only screen and (max-width: 1400px) { .modal { width: 75%; height: 80% !important; max-height: 80%; } }
+@media only screen and (max-width: 1200px) { .modal { width: 80%; height: 80% !important; max-height: 80%; } }
+@media only screen and (max-width: 600px) { .modal { width: 100%; height: 90% !important; max-height: 90%; } }
+
 .btn-modal { width: 40px; height: 40px; line-height: 40px; text-align: center; padding: 0; border-radius: 40px; margin: 4px 10px !important; }
 
 .indented { text-indent: 2rem; }
@@ -2631,6 +2633,8 @@ nav { height: 72px; padding: 4px 0; }
 .hidden { display: none; }
 
 .author { font-style: italic; }
+
+.full-width { width: 100%; }
 
 .homepage-hero-module { border-right: none; border-left: none; position: relative; height: calc(100vh - 120px); overflow: hidden; }
 

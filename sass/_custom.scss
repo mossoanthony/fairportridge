@@ -8,7 +8,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  @extend .light-blue-text, .text-accent-4;
 }
 
 .parallax-container {
@@ -150,6 +150,24 @@ nav {
   background-color: rgba(0, 145, 234, 0.65);
 }
 
+.modal {
+  @media only screen and (max-width: 1400px) {
+    width: 75%;
+    height: 80% !important;
+    max-height: 80%;
+  }
+  @media only screen and (max-width: $large-screen) {
+    width: 80%;
+    height: 80% !important;
+    max-height: 80%;
+  }
+  @media only screen and (max-width: $small-screen) {
+    width: 100%;
+    height: 90% !important;
+    max-height: 90%;
+  }
+}
+
 .btn-modal {
   width: 40px;
   height: 40px;
@@ -170,4 +188,8 @@ nav {
 
 .author {
   font-style: italic;
+}
+
+.full-width {
+  width: 100%;
 }

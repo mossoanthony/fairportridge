@@ -14,7 +14,10 @@ var modal;
     });
 
   var modalElem = document.querySelector('.modal');
-  modal = M.Modal.init(modalElem, {});
+  modal = M.Modal.init(modalElem, {
+    startingTop: '10%',
+    endingTop: '10%'
+  });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
