@@ -29,6 +29,10 @@ p {
   }
 }
 
+.large-icon {
+  font-size: 2.8rem;
+}
+
 #header-btn {
   margin-top: 32px;
 }
@@ -40,7 +44,7 @@ p {
   }
 }
 
-.parallax-container {
+.shadowed {
   text-shadow: 2px 2px rgba(0,0,0,.5);
 }
 
@@ -192,4 +196,28 @@ nav {
 
 .full-width {
   width: 100%;
+}
+
+#top-split-box {
+  border-radius: 12px 12px 0 0;
+  margin: 0;
+  h1 {
+    @media only screen and (max-width: $small-screen) {
+      font-size: 2.5rem;
+    }
+    margin: 24px 0;
+  }
+}
+
+#bottom-split-box {
+  border-width: thin;
+  border-color: #0091ea;
+  border-style: solid;
+  border-radius: 0 0 12px 12px;
+  h2 {
+    @media only screen and (max-width: $small-screen) {
+      font-size: 2rem;
+    }
+    margin: 24px 0;
+  }
 }

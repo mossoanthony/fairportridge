@@ -38,6 +38,7 @@ function initMap() {
 
   var leftPanel = document.getElementById('left-panel');
   map.controls[google.maps.ControlPosition.LEFT_TOP].push(leftPanel);
+  leftPanel.style.display = "initial";
   service = new google.maps.places.PlacesService(map);
   infowindow =  new google.maps.InfoWindow();
 

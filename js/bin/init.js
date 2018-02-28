@@ -1,4 +1,4 @@
-var carousel;
+var carousel, modal, pictureCarousel;
 var modal;
 (function($){
   $(function(){
@@ -13,11 +13,17 @@ var modal;
       onCycleTo: changedSnippet
     });
 
-  var modalElem = document.querySelector('.modal');
-  modal = M.Modal.init(modalElem, {
-    startingTop: '10%',
-    endingTop: '10%'
-  });
+    var modalElem = document.querySelector('.modal');
+    modal = M.Modal.init(modalElem, {
+      startingTop: '10%',
+      endingTop: '10%'
+    });
+
+    var pictureCarouselElem = document.querySelector('#picture-carousel');
+    pictureCarousel = M.Carousel.init(pictureCarouselElem, {
+      indicators: true,
+    });
+    pictureCarouselElem.style.height = "60vh !important"
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

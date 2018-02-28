@@ -54,15 +54,19 @@ layout: default
     </div>
   </div>
 </section>
-
 <section class="container">
   <div class="section">
-
+    <div class="row light-blue accent-4" id="top-split-box">
+      <h1 class="header col s12 center white-text">Fairport Ridge Apartments</h1>
+    </div>
+    <div class="row" id="bottom-split-box">
+      <h2 class="header col s12 center light-blue-text text-accent-4">Luxury Apartments near Corning, New York.</h2>
+    </div>
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><a id="amenities" class="anchor"><i class="material-icons">done_all</i></a></h2>
-          <h5 class="center">Amenities</h5>
+          <h3 class="center large-icon"><a id="amenities" class="anchor"><i class="material-icons">done_all</i></a></h2>
+          <h2 class="center">Amenities</h2>
           <ul>
             <li><i class="material-icons">done</i> Pet Friendly</li>
             <li><i class="material-icons">done</i> Attached Garages</li>
@@ -78,16 +82,16 @@ layout: default
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><a id="availability" class="anchor"><i class="material-icons">group</i></a></h2>
-          <h5 class="center">Availability</h5>
+          <h3 class="center large-icon"><a id="availability" class="anchor"><i class="material-icons">group</i></a></h2>
+          <h2 class="center">Availability</h2>
           <p class="light">Availability is rare, but you can add yourself to the mailing list for future vacancies.</p>
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><a id="pricing" class="anchor"><i class="material-icons">attach_money</i></a></h2>
-          <h5 class="center">Pricing</h5>
+          <h3 class="center large-icon"><a id="pricing" class="anchor"><i class="material-icons">attach_money</i></a></h2>
+          <h2 class="center">Pricing</h2>
           <p class="light">Prices range from $1,000 to $2,000. Our luxury apartments beat out our competitors in price to square foot!</p>
         </div>
       </div>
@@ -100,7 +104,7 @@ layout: default
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h5 class="header col s12 light">The most luxurious apartment complex in Corning, Big Flats, Elmira, and Horseheads.</h5>
+        <h4 class="header col s12 light shadowed">The most luxurious apartment complex in Corning, Big Flats, Elmira, and Horseheads.</h4>
       </div>
     </div>
   </div>
@@ -111,7 +115,7 @@ layout: default
   <div class="section">
     <div class="row">
       <div class="col s12 center">
-        <h4><a id="lifestyle" class="anchor">Lifestyle</a></h4>
+        <h2><a id="lifestyle" class="anchor">Lifestyle</a></h2>
         <p class="left-align light">The Fairport Ridge lifestyle is all about freedom and luxury. You'll have the freedom to enjoy your apartment home as well as your hobbies and interests because you won't be saddled with all the responsibilities of home ownership. The hassles of maintaining the grass and landscaping, cleaning the gutters, repairing appliances, or shoveling the snow are all gone. Pursue what you love to do and leave the hassles up to us!</p>
       </div>
     </div>
@@ -127,55 +131,7 @@ layout: default
 </section>
 
 <section class="container">
-  <div class="section">
-    <div class="row">
-      <div class="col s12 center">
-        <h4><a id="Pictures" class="anchor">Pictures</a></h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-      <div class="col s12 m6 l3 center">
-        <img src="img/b1.jpg" alt="" class="full-width">
-      </div>
-    </div>
-  </div>
+  {% include pictures.html %}
 </section>
 
 <footer class="page-footer light-blue">
