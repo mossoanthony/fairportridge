@@ -1,5 +1,4 @@
-var carousel, modal, pictureCarousel;
-var modal;
+var carousel, modal;
 (function($){
   $(function(){
 
@@ -19,14 +18,18 @@ var modal;
       endingTop: '10%'
     });
 
-    var pictureCarouselElem = document.querySelector('#picture-carousel');
-    pictureCarousel = M.Carousel.init(pictureCarouselElem, {
-      indicators: true,
+    blueimp.Gallery([
+    'img/b1.jpg',
+    'img/b2.jpg',
+    'img/b3.jpg',
+    'img/b4.jpg',
+    'img/b5.jpg'
+    ], {
+      container: '#image-carousel',
+      carousel: true
     });
-    pictureCarouselElem.style.height = "60vh !important"
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  });
+})(jQuery);
 
 function nextSnippet() {
   carousel.next();

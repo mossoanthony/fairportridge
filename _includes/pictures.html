@@ -4,9 +4,11 @@
       <h2><a id="Pictures" class="anchor">Pictures</a></h2>
     </div>
   </div>
-  <div class="carousel" id="picture-carousel">
-    {% for image in site.data.images %}
-    <a class="carousel-item"><img src="{{ image.src }}" alt="{{ image.alt }}"></a>
-    {% endfor %}
+  <div id="image-carousel" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a href="#!" class="btn-floating btn-large waves-effect waves-light prev"><i class="material-icons">navigate_before</i></a>
+    <a href="#!" class="btn-floating btn-large waves-effect waves-light next"><i class="material-icons">navigate_next</i></a>
+    <a class="play-pause"></a>
   </div>
 </div>
