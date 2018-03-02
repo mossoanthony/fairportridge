@@ -1,6 +1,14 @@
-var carousel, modal;
+var carousel, modal, pictureCarousel;
 (function($){
   $(function(){
+
+    pictureCarousel = $('#Carousel').glide({
+      type: 'carousel',
+      paddings: '15%',
+      autoplay: false,
+      autoheight: true,
+      // duringTransition: switchedImage
+    });
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
@@ -16,17 +24,6 @@ var carousel, modal;
     modal = M.Modal.init(modalElem, {
       startingTop: '10%',
       endingTop: '10%'
-    });
-
-    blueimp.Gallery([
-    'img/b1.jpg',
-    'img/b2.jpg',
-    'img/b3.jpg',
-    'img/b4.jpg',
-    'img/b5.jpg'
-    ], {
-      container: '#image-carousel',
-      carousel: true
     });
   });
 })(jQuery);
@@ -51,3 +48,10 @@ function changedSnippet(elem) {
   }
   selected = document.getElementsByClassName('testimonial')[index];
 }
+
+// function switchedImage(event) {
+//   console.log(event)
+//   var i = event.index - 1;
+//   $('.glide__slide.active')[0].classList.add('translucent');
+//   $('.glide__slide')[i].classList.remove('translucent');
+// }
