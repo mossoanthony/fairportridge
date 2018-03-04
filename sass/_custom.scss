@@ -242,16 +242,16 @@ nav {
 .glide__slide {
   border-left: thin solid white;
   border-right: thin solid white;
-  // opacity: 1;
   opacity: 0.5;
           transition: opacity .6s;
        -o-transition: opacity .6s;
      -moz-transition: opacity .6s;
   -webkit-transition: opacity .6s;
-}
-
-.glide__slide.translucent {
-  // opacity: 0.5;
+  div {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .glide__slide.active {
