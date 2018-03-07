@@ -2610,7 +2610,7 @@ nav { height: 72px; padding: 4px 0; }
 
 #left-panel { z-index: 1; height: auto; width: 17rem; background-color: rgba(0, 0, 0, 0.6); padding: 0 1rem; }
 
-#map-search { height: 2.5rem; width: 85%; font: 400 1rem Roboto, Arial, sans-serif; }
+#map-search { height: 2.5rem; width: 85%; font: 400 1rem Roboto, Arial, sans-serif; color: #fff; }
 
 #search-btn { padding: 0 5px; }
 
@@ -2663,6 +2663,13 @@ nav { height: 72px; padding: 4px 0; }
 .bottom-padding { padding-bottom: 1.5rem; }
 
 .collapsible-body { background-color: #eee; }
+
+.contact-info { display: flex; -webkit-tap-highlight-color: transparent; line-height: 1.5; padding: 1rem; background-color: #fff; border-bottom: 1px solid #ddd; color: #000; color: rgba(0, 0, 0, 0.87); }
+.contact-info i { width: 2rem; font-size: 1.6rem; display: inline-block; text-align: center; margin-right: 1rem; }
+
+a.contact-info:hover { background-color: #eee; }
+
+input { color: #000; }
 
 .homepage-hero-module { border-right: none; border-left: none; position: relative; height: 700px; height: calc(100vh - 120px); overflow: hidden; }
 

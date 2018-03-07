@@ -1,3 +1,3 @@
 $(function() {
-  $('video').prop('autoplay', true)
+  $('#video-header').get(0).play();
 });
