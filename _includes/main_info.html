@@ -1,11 +1,11 @@
 <div class="section">
 
   <div class="row light-blue accent-4" id="top-split-box">
-    <h1 class="header col s12 center white-text">Fairport Ridge Apartments</h1>
+    <h1 class="header col s12 center white-text">{{ site.data.general.header }}</h1>
   </div>
 
   <div class="row" id="bottom-split-box">
-    <h2 class="header col s12 center light-blue-text text-accent-4">Luxury Apartments near Corning, New York.</h2>
+    <h2 class="header col s12 center light-blue-text text-accent-4">{{ site.data.general.subheader }}</h2>
   </div>
 
   <div class="row">
@@ -14,14 +14,9 @@
         <h3 class="center large-icon"><a id="amenities" class="anchor"><i class="material-icons">done_all</i></a></h3>
         <h2 class="center">Amenities</h2>
         <ul>
-          <li><i class="material-icons">done</i> Pet Friendly</li>
-          <li><i class="material-icons">done</i> Attached Garages</li>
-          <li><i class="material-icons">done</i> Single Story</li>
-          <li><i class="material-icons">done</i> Low Density Housing</li>
-          <li><i class="material-icons">done</i> Spacious Design</li>
-          <li><i class="material-icons">done</i> Modern Kitchen</li>
-          <li><i class="material-icons">done</i> Excellent Craftsmanship</li>
-          <li><i class="material-icons">done</i> Energy Efficient</li>
+          {% for a in site.data.general.amenities %}
+          <li><i class="material-icons">done</i> {{ a.item }}</li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -30,7 +25,7 @@
       <div class="icon-block">
         <h3 class="center large-icon"><a id="availability" class="anchor"><i class="material-icons">group</i></a></h3>
         <h2 class="center">Availability</h2>
-        <p class="light">Availability is rare, but you can add yourself to the mailing list for future vacancies.</p>
+        <p class="light">{{ site.data.general.availability }}</p>
       </div>
     </div>
 
@@ -38,7 +33,7 @@
       <div class="icon-block">
         <h3 class="center large-icon"><a id="pricing" class="anchor"><i class="material-icons">attach_money</i></a></h3>
         <h2 class="center">Pricing</h2>
-        <p class="light">Prices range from $1,000 to $2,000. Our luxury apartments beat out our competitors in price to square foot!</p>
+        <p class="light">{{ site.data.general.pricing }}</p>
       </div>
     </div>
   </div>

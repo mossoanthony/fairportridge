@@ -5,9 +5,11 @@ layout: default
   {% include nav.html %}
 </section>
 
+{% if site.data.general.banner != blank? %}
 <div class="important-header valign-wrapper center">
-  <p>One suite available!</p>
+  <p>{{ site.data.general.banner }}</p>
 </div>
+{% endif %}
 
 <section class="homepage-hero-module">
   {% include video.html %}
@@ -46,32 +48,5 @@ layout: default
 </section>
 
 <footer class="page-footer light-blue accent-4">
-  <div class="container">
-  <div class="row">
-    <div class="col l6 s12">
-      <h5 class="white-text">Fairport Ridge Apartments</h5>
-      <p class="grey-text text-lighten-4">Luxury Apartments near Corning NY. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div class="col l4 offset-l2 s12">
-      <h5 class="white-text">Site Map</h5>
-      <ul>
-        <li><a class="grey-text text-lighten-3" href="#amenities">Amenities</a></li>
-        <li><a class="grey-text text-lighten-3" href="#availability">Availability</a></li>
-        <li><a class="grey-text text-lighten-3" href="#pricing">Pricing</a></li>
-        <li><a class="grey-text text-lighten-3" href="#lifestyle">Lifestyle</a></li>
-        <li><a class="grey-text text-lighten-3" href="#testimonials">Testimonials</a></li>
-        <li><a class="grey-text text-lighten-3" href="#map">Location</a></li>
-        <li><a class="grey-text text-lighten-3" href="#pictures">Pictures</a></li>
-        <li><a class="grey-text text-lighten-3" href="#faq">FAQ</a></li>
-        <li><a class="grey-text text-lighten-3" href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2018 Fairport Ridge Apartments
-    <a class="grey-text text-lighten-4 right" href="https://github.com/robinator8" target="_blank">Created by Robert Craig</a>
-    </div>
-  </div>
+  {% include footer.html %}
 </footer>

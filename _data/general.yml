@@ -1,0 +1,37 @@
+banner: One suite available
+contact_button: Contact Us
+header: Fairport Ridge Apartments
+subheader: Luxury Apartments near Corning / Horseheads, New York.
+amenities:
+  - item: Pet Friendly
+  - item: Attached Garages
+  - item: Single Story
+  - item: Low Density Housing
+  - item: Spacious Design
+  - item: Modern Kitchen
+  - item: Excellent Craftsmanship
+  - item: Energy Efficient
+availability: Availability is rare, but you can add yourself to the mailing list for future vacancies.
+pricing: Prices range from $1,000 to $2,000. Our luxury apartments beat out our competitors in price to square foot!
+image_text: The most luxurious apartment complex in Corning, Big Flats, Elmira, and Horseheads.
+image_src: b1.jpg
+lifestyle: The Fairport Ridge lifestyle is all about freedom and luxury. You'll have the freedom to enjoy your apartment home as well as your hobbies and interests because you won't be saddled with all the responsibilities of home ownership. The hassles of maintaining the grass and landscaping, cleaning the gutters, repairing appliances, or shoveling the snow are all gone. Pursue what you love to do and leave the hassles up to us!
+images:
+  - src: b1.jpg
+  - src: b2.jpg
+  - src: b3.jpg
+  - src: b4.jpg
+  - src: b5.jpg
+faq:
+  - question: Are pets allowed?
+    answer: Of course! We love pets and realize they're part of the family.
+  - question: What should this question be?
+    answer: Excellent question, and at this point I'm not entirely sure.
+  - question: What about this question?
+    answer: Again, I really don't know.
+  - question: How many question can go here?
+    answer: As many as you'd like!
+email: email@example.com
+phone: (314) 159-2653
+address: 756 Fischler St. Ext.
+footer_text: Luxury Apartments near Corning NY. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

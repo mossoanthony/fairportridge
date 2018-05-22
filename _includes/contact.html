@@ -8,22 +8,14 @@
 
   <div class="row center">
     <div class="col s12 m6">
-      <h5>Join our mailing list!</h5>
-      <div class="input-field inline">
-        <input type="text" class="validate">
-        <label for="first_name">Email</label>
-      </div>
-      <a class="waves-effect waves-light btn btn-large">Join</a>
-    </div>
-    <div class="col s12 m6">
       <a href="mailto:email@example.com" class="contact-info">
-        <i class="material-icons">email</i> email@example.com
+        <i class="material-icons">email</i> {{ site.data.general.email }}
       </a>
-      <div class="contact-info">
-        <i class="material-icons">phone</i> (314) 159-2653
-      </div>
-      <a target="_blank" href="https://www.google.com/maps/place/756+Fischler+St,+Wellsboro,+PA+16901/@41.748378,-77.3395157,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x89ce2f1ed9a49f09:0xee52acd58d4635ef!2s756+Fischler+St,+Wellsboro,+PA+16901!3b1!8m2!3d41.748378!4d-77.337327!3m4!1s0x89ce2f1ed9a49f09:0xee52acd58d4635ef!8m2!3d41.748378!4d-77.337327" class="contact-info">
-        <i class="material-icons">place</i> 756 Fischler St. Ext.
+      <a href="tel:{{ site.data.general.phone }}" class="contact-info">
+        <i class="material-icons">phone</i> {{ site.data.general.phone }}
+      </a>
+      <a target="_blank" href="https://maps.google.com/?q={{ site.data.general.address }}" class="contact-info">
+        <i class="material-icons">place</i> {{ site.data.general.address }}
       </a>
     </div>
   </div>
