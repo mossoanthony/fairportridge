@@ -1,7 +1,7 @@
 <div class="section">
   <div class="row">
     <div class="col s12 center">
-      <h2><a id="Pictures" class="anchor">Pictures</a></h2>
+      <h2><a id="pictures" class="anchor">Pictures</a></h2>
     </div>
   </div>
   <div class="module module--horizontal z-depth-4">
@@ -12,7 +12,7 @@
       </div>
       <div class="glide__wrapper">
         <ul class="glide__track">
-          {% for image in site.data.images %}
+          {% for image in site.data.general.images %}
           <li class="glide__slide">
             <div class="box">
               <img src="img/{{ image.src }}">

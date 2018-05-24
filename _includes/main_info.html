@@ -1,0 +1,41 @@
+<div class="section">
+
+  <div class="row light-blue accent-4" id="top-split-box">
+    <h1 class="header col s12 center white-text">{{ site.data.general.header }}</h1>
+  </div>
+
+  <div class="row" id="bottom-split-box">
+    <h2 class="header col s12 center light-blue-text text-accent-4">{{ site.data.general.subheader }}</h2>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h3 class="center large-icon"><a id="amenities" class="anchor"><i class="material-icons">done_all</i></a></h3>
+        <h2 class="center">Amenities</h2>
+        <ul>
+          {% for a in site.data.general.amenities %}
+          <li><i class="material-icons">done</i> {{ a.item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h3 class="center large-icon"><a id="availability" class="anchor"><i class="material-icons">group</i></a></h3>
+        <h2 class="center">Availability</h2>
+        <p class="light">{{ site.data.general.availability }}</p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h3 class="center large-icon"><a id="pricing" class="anchor"><i class="material-icons">attach_money</i></a></h3>
+        <h2 class="center">Pricing</h2>
+        <p class="light">{{ site.data.general.pricing }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="section">
+
+  <div class="row">
+    <div class="col s12 center">
+      <h2><a id="contact" class="anchor">Contact Us</a></h2>
+    </div>
+  </div>
+
+  <div class="row center">
+    <div class="col s12 m6">
+      <a href="mailto:email@example.com" class="contact-info">
+        <i class="material-icons">email</i> {{ site.data.general.email }}
+      </a>
+      <a href="tel:{{ site.data.general.phone }}" class="contact-info">
+        <i class="material-icons">phone</i> {{ site.data.general.phone }}
+      </a>
+      <a target="_blank" href="https://maps.google.com/?q={{ site.data.general.address }}" class="contact-info">
+        <i class="material-icons">place</i> {{ site.data.general.address }}
+      </a>
+    </div>
+  </div>
+
+</div>

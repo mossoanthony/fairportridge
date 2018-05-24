@@ -1,32 +1,35 @@
 var carousel, modal, pictureCarousel;
-(function($){
-  $(function(){
+$(function(){
 
-    pictureCarousel = $('#Carousel').glide({
-      type: 'carousel',
-      paddings: '15%',
-      autoplay: false,
-      autoheight: true,
-      // duringTransition: switchedImage
-    });
-
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-    var carouselElem = document.querySelector('.carousel.carousel-slider');
-    carousel = M.Carousel.init(carouselElem, {
-      fullWidth: true,
-      indicators: true,
-      onCycleTo: changedSnippet
-    });
-
-    var modalElem = document.querySelector('.modal');
-    modal = M.Modal.init(modalElem, {
-      startingTop: '10%',
-      endingTop: '10%'
-    });
+  pictureCarousel = $('#Carousel').glide({
+    type: 'carousel',
+    paddings: '15%',
+    autoplay: false,
+    autoheight: true,
+    // duringTransition: switchedImage
   });
-})(jQuery);
+
+  $('.sidenav').sidenav();
+  $('.parallax').parallax();
+
+  var carouselElem = $('.carousel.carousel-slider')[0];
+  carousel = M.Carousel.init(carouselElem, {
+    fullWidth: true,
+    indicators: true,
+    onCycleTo: changedSnippet
+  });
+
+  var modalElem = $('.modal');
+  modal = M.Modal.init(modalElem, {
+    startingTop: '10%',
+    endingTop: '10%'
+  });
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+});
 
 function nextSnippet() {
   carousel.next();
@@ -48,10 +51,3 @@ function changedSnippet(elem) {
   }
   selected = document.getElementsByClassName('testimonial')[index];
 }
-
-// function switchedImage(event) {
-//   console.log(event)
-//   var i = event.index - 1;
-//   $('.glide__slide.active')[0].classList.add('translucent');
-//   $('.glide__slide')[i].classList.remove('translucent');
-// }
