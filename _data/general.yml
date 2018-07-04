@@ -22,7 +22,6 @@ images:
   - src: b3.jpg
   - src: b4.jpg
   - src: b5.jpg
-  - src: splash_image.png
 faq:
   - question: Are pets allowed?
     answer: Of course! We love pets and realize they're part of the family.
