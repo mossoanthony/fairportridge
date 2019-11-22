@@ -24,8 +24,8 @@ images:
   - src: b5.jpg
   - src: DSCN0039.JPG
   - src: DSCN0046.JPG
-  -src: DSCN0047.JPG
-  -src: DSCN0048.JPG
+  - src: DSCN0047.JPG
+  - src: DSCN0048.JPG
 faq:
   - question: Are pets allowed?
     answer: Of course! We love pets and realize they're part of the family.There are additional fees required for pets. Breed and size restrictions may apply. Additional rules pertaining to pets apply.
